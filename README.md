@@ -1,253 +1,154 @@
-<!DOCTYPE html>
-<html lang="mr">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Sagle HTML tags ekatra dakhvणारी demo file">
-  <meta name="keywords" content="html, tags, demo">
-  <title>Sagle HTML Tags - Demo Page</title>
-  <base href="https://example.com/">
-  <style>
-    body { font-family: Arial, sans-serif; max-width: 900px; margin: 20px auto; padding: 0 15px; line-height: 1.6; }
-    section { border: 1px solid #ccc; margin: 20px 0; padding: 15px; border-radius: 8px; }
-    h2 { background: #eee; padding: 8px; }
-    table, th, td { border: 1px solid #999; border-collapse: collapse; padding: 6px; }
-  </style>
-</head>
-<body>
+ठीक आहे, इथेच देतो. सगळे HTML tags category नुसार, प्रत्येकाची छोटी माहिती:
 
-  <!-- ===== HEADER ===== -->
-  <header>
-    <h1>Sagle HTML Tags - Ekatra Demo</h1>
-    <nav>
-      <a href="#text">Text</a> |
-      <a href="#lists">Lists</a> |
-      <a href="#media">Media</a> |
-      <a href="#table">Table</a> |
-      <a href="#form">Form</a> |
-      <a href="#interactive">Interactive</a>
-    </nav>
-  </header>
+## 1. Document Structure Tags
+| Tag | माहिती |
+|---|---|
+| `<!DOCTYPE html>` | HTML5 document असल्याचं सांगतो |
+| `<html>` | Root tag, सगळं content यात |
+| `<head>` | न दिसणारा metadata भाग |
+| `<body>` | दिसणारा actual content |
+| `<title>` | Browser tab वरचं title |
+| `<meta>` | Charset, viewport, description वगैरे info |
+| `<link>` | CSS file किंवा icon जोडायला |
+| `<style>` | Internal CSS लिहायला |
+| `<script>` | JavaScript जोडायला |
+| `<base>` | सगळ्या relative links साठी base URL ठरवतो |
 
-  <main>
+## 2. Text Content Tags
+| Tag | माहिती |
+|---|---|
+| `<h1>` to `<h6>` | Headings, h1 सर्वात मोठं/important |
+| `<p>` | Paragraph |
+| `<br>` | Line break |
+| `<hr>` | Horizontal line |
+| `<pre>` | जसच्या तसं spacing/formatting ठेवतो |
+| `<blockquote>` | Quote दाखवायला (indent होतो) |
+| `<q>` | Short inline quote |
+| `<abbr>` | Abbreviation, hover वर full form दिसतं |
+| `<address>` | Contact info साठी |
+| `` | एखाद्या creative work चा reference |
+| `<code>` | Code snippet दाखवायला |
+| `<kbd>` | Keyboard input दाखवायला |
+| `<samp>` | Program चा output दाखवायला |
+| `<var>` | Variable name दाखवायला |
+| `<time>` | Date/time दाखवायला (machine-readable) |
 
-    <!-- ===== TEXT & FORMATTING TAGS ===== -->
-    <section id="text">
-      <h2>1. Text va Formatting Tags</h2>
-      <h3>Hi h3 heading ahe</h3>
-      <p>He ek normal <strong>paragraph</strong> ahe jyat <em>emphasis</em>, <b>bold</b>, <i>italic</i>, 
-        <u>underline</u>, <s>strikethrough</s>, <mark>highlight</mark>, <small>chhota text</small>, 
-        H<sub>2</sub>O ani x<sup>2</sup> asa content ahe.</p>
-      <p>Ha <del>juna text</del> <ins>navin text ne replace zala</ins>.</p>
-      <blockquote cite="https://example.com">He ek blockquote ahe - motivational quote.</blockquote>
-      <p>Ha <q>short inline quote</q> ahe ani <abbr title="HyperText Markup Language">HTML</abbr> cha full form abbr madhe ahe.</p>
-      <address>Author: Ram Sharma, Pune, India</address>
-      <p>Code example: <code>let x = 10;</code>, keyboard: <kbd>Ctrl + C</kbd>, output: <samp>Hello World</samp>, variable: <var>x</var></p>
-      <p>Meeting time: <time datetime="2026-08-20T10:00">20 August 2026, 10:00 AM</time></p>
-      <pre>
-  Ha pre tag ahe
-      spacing jashi lihili tashi
-  disते.
-      </pre>
-      <hr>
-      <p>Ha paragraph pahilya paragraph pasun<br>line break ne veगळा ahe.</p>
-    </section>
+## 3. Text Formatting Tags
+| Tag | माहिती |
+|---|---|
+| `<b>` | Bold (फक्त style) |
+| `<strong>` | Bold + important meaning |
+| `<i>` | Italic (फक्त style) |
+| `<em>` | Italic + emphasis meaning |
+| `<u>` | Underline |
+| `<s>` | Strikethrough (yापुढे relevant नाही असा text) |
+| `<del>` | Delete केलेला text |
+| `<ins>` | नवीन add केलेला text |
+| `<mark>` | Highlight |
+| `<small>` | छोटा text |
+| `<sub>` | Subscript (H₂O मधलं 2) |
+| `<sup>` | Superscript (x² मधलं 2) |
+| `<span>` | Inline generic container |
 
-    <!-- ===== LISTS ===== -->
-    <section id="lists">
-      <h2>2. Lists</h2>
-      <p>Unordered list:</p>
-      <ul>
-        <li>Chaha</li>
-        <li>Coffee</li>
-      </ul>
-      <p>Ordered list:</p>
-      <ol>
-        <li>Pahile step</li>
-        <li>Doosre step</li>
-      </ol>
-      <p>Description list:</p>
-      <dl>
-        <dt>HTML</dt>
-        <dd>Structure banवते</dd>
-        <dt>CSS</dt>
-        <dd>Styling karते</dd>
-      </dl>
-    </section>
+## 4. Lists
+| Tag | माहिती |
+|---|---|
+| `<ul>` | Unordered (bullet) list |
+| `<ol>` | Ordered (numbered) list |
+| `<li>` | List item |
+| `<dl>` | Description list |
+| `<dt>` | Description term |
+| `<dd>` | Description details |
 
-    <!-- ===== LINKS & IMAGES ===== -->
-    <section id="links">
-      <h2>3. Links, Images va Figure</h2>
-      <p><a href="https://google.com" target="_blank">Google la ja</a></p>
-      <figure>
-        <img src="https://via.placeholder.com/150" alt="Placeholder image" width="150">
-        <figcaption>He ek sample image ahe.</figcaption>
-      </figure>
-      <map name="imgmap">
-        <area shape="rect" coords="0,0,50,50" href="https://example.com" alt="Clickable area">
-      </map>
-    </section>
+## 5. Links & Navigation
+| Tag | माहिती |
+|---|---|
+| `<a>` | Hyperlink |
+| `<nav>` | Navigation links चा section |
 
-    <!-- ===== MEDIA ===== -->
-    <section id="media">
-      <h2>4. Audio, Video va Embedded Content</h2>
-      <p>Audio player:</p>
-      <audio controls>
-        <source src="song.mp3" type="audio/mpeg">
-        Tumcha browser audio support karत nahi.
-      </audio>
-      <p>Video player:</p>
-      <video controls width="300">
-        <source src="movie.mp4" type="video/mp4">
-        <track kind="subtitles" src="subs.vtt" srclang="mr" label="Marathi">
-        Tumcha browser video support karत nahi.
-      </video>
-      <p>Iframe (dusra page embed):</p>
-      <iframe src="https://www.example.com" width="300" height="150" title="Example site"></iframe>
-      <p>SVG graphic:</p>
-      <svg width="100" height="100">
-        <circle cx="50" cy="50" r="40" fill="skyblue" stroke="navy" />
-      </svg>
-      <p>Canvas (JS ने draw karayla):</p>
-      <canvas id="myCanvas" width="150" height="80" style="border:1px solid #000;"></canvas>
-    </section>
+## 6. Images & Media
+| Tag | माहिती |
+|---|---|
+| `<img>` | Image दाखवायला |
+| `<figure>` | Image/media + caption ला group करतो |
+| `<figcaption>` | Figure ची caption |
+| `<audio>` | Audio player |
+| `<video>` | Video player |
+| `<source>` | Audio/video/picture साठी multiple sources |
+| `<track>` | Video साठी subtitles/captions |
+| `<picture>` | Responsive images (screen size नुसार) |
+| `<map>` | Image वर clickable areas बनवायला |
+| `<area>` | Map मधला clickable region |
 
-    <!-- ===== TABLE ===== -->
-    <section id="table">
-      <h2>5. Table</h2>
-      <table>
-        <caption>Student Marks</caption>
-        <colgroup>
-          <col style="background-color:#f9f9f9;">
-          <col>
-        </colgroup>
-        <thead>
-          <tr><th>Naav</th><th>Marks</th></tr>
-        </thead>
-        <tbody>
-          <tr><td>Ram</td><td>85</td></tr>
-          <tr><td>Sita</td><td>90</td></tr>
-        </tbody>
-        <tfoot>
-          <tr><td>Total</td><td>175</td></tr>
-        </tfoot>
-      </table>
-    </section>
+## 7. Tables
+| Tag | माहिती |
+|---|---|
+| `<table>` | Table container |
+| `<thead>` | Table चा header भाग |
+| `<tbody>` | Table चा body भाग |
+| `<tfoot>` | Table चा footer भाग |
+| `<tr>` | Table row |
+| `<th>` | Header cell |
+| `<td>` | Data cell |
+| `<caption>` | Table ची caption |
+| `<colgroup>` | Columns group करायला |
+| `<col>` | Individual column ला style द्यायला |
 
-    <!-- ===== FORM ===== -->
-    <section id="form">
-      <h2>6. Form (Sagle Input Types)</h2>
-      <form action="#" method="POST">
-        <fieldset>
-          <legend>Personal Details</legend>
+## 8. Forms
+| Tag | माहिती |
+|---|---|
+| `<form>` | Form container |
+| `<input>` | Text, email, password, checkbox वगैरे input |
+| `<textarea>` | Multi-line text input |
+| `<button>` | Clickable button |
+| `<select>` | Dropdown |
+| `<option>` | Dropdown मधला एक choice |
+| `<optgroup>` | Options ला group करायला |
+| `<label>` | Input ला नाव/label देतो |
+| `<fieldset>` | Related form elements ला group करतो |
+| `<legend>` | Fieldset ची title |
+| `<datalist>` | Input साठी suggestions list |
+| `<output>` | Calculation चा result दाखवायला |
+| `<progress>` | Progress bar |
+| `<meter>` | Fixed range मधली value (जसं battery %) |
 
-          <label for="name">Naav:</label>
-          <input type="text" id="name" name="name" placeholder="Tumche naav" required><br><br>
+## 9. Semantic Layout Tags
+| Tag | माहिती |
+|---|---|
+| `<header>` | Page/section चा header |
+| `<footer>` | Page/section चा footer |
+| `<main>` | Page चा मुख्य unique content |
+| `<section>` | Content चा logical भाग |
+| `<article>` | Independent, self-contained content (blog post वगैरे) |
+| `<aside>` | Side content (sidebar, ads) |
+| `<div>` | Generic block container |
 
-          <label for="email">Email:</label>
-          <input type="email" id="email" name="email"><br><br>
+## 10. Embedded Content
+| Tag | माहिती |
+|---|---|
+| `<iframe>` | दुसरा webpage embed करायला |
+| `<embed>` | External content embed करायला (plugin content) |
+| `<object>` | External resource embed करायला (PDF वगैरे) |
+| `<canvas>` | JS ने drawing/games बनवायला |
+| `<svg>` | Vector graphics |
 
-          <label for="pass">Password:</label>
-          <input type="password" id="pass" name="pass"><br><br>
+## 11. Interactive Elements
+| Tag | माहिती |
+|---|---|
+| `<details>` | Collapsible content (JS शिवाय) |
+| `<summary>` | Details चा visible heading |
+| `<dialog>` | Popup/modal box |
 
-          <label for="age">Vay:</label>
-          <input type="number" id="age" name="age" min="1" max="100"><br><br>
+## 12. Other Useful Tags
+| Tag | माहिती |
+|---|---|
+| `<template>` | Hidden content, JS ने नंतर वापरण्यासाठी |
+| `<noscript>` | JS off असेल तर दाखवायचा content |
+| `<wbr>` | Word कुठे break करायचा ते सुचवतो |
+| `<data>` | Content ला machine-readable value देतो |
+| `<bdi>` | Text चा direction वेगळा isolate करतो |
+| `<bdo>` | Text ची direction override करतो (RTL/LTR) |
 
-          <label for="dob">Date of Birth:</label>
-          <input type="date" id="dob" name="dob"><br><br>
+---
 
-          <label for="fruit">Favourite Fruit:</label>
-          <input list="fruits" id="fruit" name="fruit">
-          <datalist id="fruits">
-            <option value="Apple">
-            <option value="Mango">
-          </datalist><br><br>
-
-          <p>Gender:</p>
-          <input type="radio" id="male" name="gender" value="male">
-          <label for="male">Male</label>
-          <input type="radio" id="female" name="gender" value="female">
-          <label for="female">Female</label><br><br>
-
-          <input type="checkbox" id="terms" name="terms">
-          <label for="terms">Mi terms manya karto</label><br><br>
-
-          <label for="city">City:</label>
-          <select id="city" name="city">
-            <optgroup label="Maharashtra">
-              <option value="pune">Pune</option>
-              <option value="mumbai">Mumbai</option>
-            </optgroup>
-          </select><br><br>
-
-          <label for="msg">Message:</label><br>
-          <textarea id="msg" name="msg" rows="3" cols="30"></textarea><br><br>
-
-          <label for="file">File Upload:</label>
-          <input type="file" id="file" name="file"><br><br>
-
-          <label for="range">Rating:</label>
-          <input type="range" id="range" min="0" max="10"><br><br>
-
-          <label for="prog">Progress:</label>
-          <progress id="prog" value="70" max="100"></progress>
-
-          <label for="mtr">Battery:</label>
-          <meter id="mtr" value="0.6">60%</meter><br><br>
-
-          <button type="submit">Submit Kara</button>
-          <button type="reset">Reset Kara</button>
-          <output name="result" for="age"></output>
-        </fieldset>
-      </form>
-    </section>
-
-    <!-- ===== INTERACTIVE ELEMENTS ===== -->
-    <section id="interactive">
-      <h2>7. Interactive Elements</h2>
-      <details>
-        <summary>Click kara jasta mahiti sathi</summary>
-        <p>Hi hidden content ahe jo click केल्यावर disते.</p>
-      </details><br>
-
-      <button onclick="document.getElementById('myDialog').showModal()">Dialog Ughad</button>
-      <dialog id="myDialog">
-        <p>Ha ek dialog/popup box ahe.</p>
-        <button onclick="document.getElementById('myDialog').close()">Band Kar</button>
-      </dialog>
-    </section>
-
-    <!-- ===== ASIDE, ARTICLE ===== -->
-    <article>
-      <h2>Article Tag</h2>
-      <p>He ek independent article content ahe, jasa blog post.</p>
-    </article>
-
-    <aside>
-      <p>He aside section ahe - sidebar/extra info sathi.</p>
-    </aside>
-
-    <!-- ===== DATA ATTRIBUTE, VAR EXAMPLE ===== -->
-    <div data-user-id="123" data-role="admin">Ha div data attributes vaparto (JS madhe access karayla).</div>
-
-    <!-- ===== NOSCRIPT ===== -->
-    <noscript>Tumcha JavaScript band ahe, kahi features kaam karणar nahit.</noscript>
-
-  </main>
-
-  <!-- ===== FOOTER ===== -->
-  <footer>
-    <p>&copy; 2026 Sagle HTML Tags Demo. Sarv hakk raakhीव.</p>
-  </footer>
-
-  <!-- ===== SCRIPT ===== -->
-  <script>
-    // Canvas var chhota drawing
-    const canvas = document.getElementById('myCanvas');
-    const ctx = canvas.getContext('2d');
-    ctx.fillStyle = 'tomato';
-    ctx.fillRect(10, 10, 100, 60);
-  </script>
-
-</body>
-</html>
+हे सगळे standard HTML5 tags आहेत. आता CSS सुरू करूया का?
