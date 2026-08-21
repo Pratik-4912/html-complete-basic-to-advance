@@ -1,5 +1,3 @@
-ठीक आहे, इथेच देतो. सगळे HTML tags category नुसार, प्रत्येकाची छोटी माहिती:
-
 ## 1. Document Structure Tags
 | Tag | माहिती |
 |---|---|
@@ -148,7 +146,3 @@
 | `<data>` | Content ला machine-readable value देतो |
 | `<bdi>` | Text चा direction वेगळा isolate करतो |
 | `<bdo>` | Text ची direction override करतो (RTL/LTR) |
-
----
-
-हे सगळे standard HTML5 tags आहेत. आता CSS सुरू करूया का?
